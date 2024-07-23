@@ -3,16 +3,15 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
+first_name: Varad
+middle_name: 
+last_name: Vaidya
+email: varadmandar@iisc.ac.in
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -31,7 +30,7 @@ back_to_top: true # set to false to disable the back to top button
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
+  enabled: false
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
@@ -78,7 +77,7 @@ dblp_url: # your DBLP profile url
 discord_id: # your discord id (18-digit unique numerical identifier)
 facebook_id: # your facebook id
 flickr_id: # your flickr id
-github_username: # your GitHub user name
+github_username: varadVaidya # your GitHub user name
 gitlab_username: # your GitLab user name
 ieee_id: # your ieeexplore.ieee.org/author/id
 instagram_id: # your instagram id
@@ -86,7 +85,7 @@ kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
 lastfm_id: # your lastfm id
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
-linkedin_username: # your LinkedIn user name
+linkedin_username: varad-vaidya-a86696176 # your LinkedIn user name
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 medium_username: # your Medium username
 orcid_id: # your ORCID ID
@@ -103,16 +102,16 @@ stackoverflow_id: # your stackoverflow id
 telegram_username: # your Telegram user name
 unsplash_id: # your unsplash id
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
-whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+whatsapp_number: +918605573999 # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 work_url: # work page URL
-x_username: # your X handle
+x_username: AegislashV # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  The best way to reach me is via my email or text me on WhatsApp.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -120,20 +119,20 @@ contact_note: >
 
 # For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
 # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
-google_analytics: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
+google_analytics: G-MZC7H112MS # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
 cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
-google_site_verification: # your google-site-verification ID (Google Search Console)
+google_site_verification: MUdzdfr2bo2D96amIdG6goC8pSA0rY1U69VhNpb68vQ # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: blog posts # blog_name will be displayed in your blog page
+blog_description: a whiteboard for me to share my thoughts and small ideas.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -168,13 +167,6 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-
 # -----------------------------------------------------------------------------
 # Newsletter
 # -----------------------------------------------------------------------------
@@ -304,16 +296,17 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: ['pdf', 'notes', 'report', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
+
+# display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Vaidya]
+  first_name: [Varad, V.]
 
   style: apa
   locale: en
@@ -421,10 +414,10 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: false # enables google analytics
+enable_google_analytics: true # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
-enable_google_verification: false # enables google site verification
+enable_google_verification: true # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)

@@ -1,14 +1,12 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - varadVaidya
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - varadVaidya/dmp
+  - varadVaidya/pybullet-force-control
+  - varadVaidya/Drone-Control
+  - varadVaidya/2ArmPid
+  - varadVaidya/Capstone2.0
+  - varadVaidya/mujoco_Arm

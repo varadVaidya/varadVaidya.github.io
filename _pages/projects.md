@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Collection of projects that I have worked/experimented on. NOTE --- This section is still currently under construction. Please visit repositories section to visit GitHub links of projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories:
 horizontal: false
 ---
 
