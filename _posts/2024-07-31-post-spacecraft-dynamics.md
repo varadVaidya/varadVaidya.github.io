@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spacecraft Dynamics and Control
-date: 2024-07-31
+date: 2024-08-02
 description: notes on Spacecraft Dynamics and Control
 tags: notes
 ---
