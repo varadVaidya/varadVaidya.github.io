@@ -8,7 +8,7 @@ enableRobotsTXT = true
 
 [params]
   author = "Varad Vaidya"
-  description = "MTech Research student at IISc Bangalore"
+  description = "PhD student at RBCCPS, IISc Bangalore"
 
   # Analytics
   googleAnalytics = "G-MZC7H112MS"

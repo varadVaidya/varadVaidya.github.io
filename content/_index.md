@@ -4,6 +4,12 @@ image: "/img/prof_pic.jpg"
 subtitle: "IISc Bangalore | Thermax Limited | VNIT Nagpur"
 show_news: true
 news:
+  - date: "Oct 2025"
+    text: "Presented 'Dynamics-Invariant Quadrotor Control' at IROS 2025, Hangzhou, China."
+  - date: "Jun 2025"
+    text: "Paper 'Dynamics-Invariant Quadrotor Control' accepted to IROS 2025."
+  - date: "Apr 2025"
+    text: "Converted to PhD student in Cyber-Physical Systems at RBCCPS, IISc Bengaluru."
   - date: "Jun 2023"
     text: "Got admitted to MTech Research in Cyber Physical Systems at RBCCPS, IISc Bengaluru."
   - date: "Aug 2022"
@@ -12,16 +18,14 @@ news:
     text: "Graduated in Mechanical Engineering from VNIT, Nagpur with 8.68 CGPA."
 ---
 
-I'm Varad Vaidya, an engineer and an MTech by Research student at the Robert Bosch Center for Cyber-Physical Systems in IISc Bengaluru. I earned my Bachelor's degree in Mechanical Engineering from Visvesvaraya National Institute of Technology, Nagpur, in 2022.
+I'm Varad Vaidya, a PhD student at the Robert Bosch Center for Cyber-Physical Systems (RBCCPS), Indian Institute of Science (IISc) Bengaluru. I received my Bachelor's degree in Mechanical Engineering from Visvesvaraya National Institute of Technology, Nagpur, in 2022.
 
-I previously worked at Thermax Limited, Pune, where I focused on alternate (biomass-based) and renewable energy sources for industrial processes.
+My research focuses on dynamics-invariant control for quadrotors and agile aerial robots. I design controllers and learning-based policies that respect and exploit dynamics invariants for robust, high-performance flight. I'm broadly interested in reinforcement learning, optimal control, and autonomy for robotics, with a long-term interest in applying these techniques to space robotics and aerospace systems.
 
-My academic interests center around robotics, particularly in the autonomy and control of robots and aerospace vehicles. I'm also intrigued by spacecraft and space robots.
+Recent work: my paper "Dynamics-Invariant Quadrotor Control" was accepted to IROS 2025 (June 2025) and presented at IROS 2025 in Hangzhou (October 2025).
 
-During my time at VNIT, I actively contributed to IvLabs, where I worked on modeling and controlling quadrotors and explored the dynamics of robotic manipulators. I also briefly ventured into mobile robots and applied Deep Reinforcement Learning for robotic control.
+Previously, I worked at Thermax Limited, Pune, focusing on alternate (biomass-based) and renewable energy sources for industrial processes. During my undergraduate studies at VNIT, I contributed to IvLabs on quadrotor modeling and control, robotic manipulators, and applied deep reinforcement learning for robot control.
 
-Currently, I'm researching the use of onboard inertial guidance for precise maneuvers in aerial robots.
+Outside research, I enjoy Hindustani classical music and photography. I've achieved "Praveshika Purn" in Hindustani Classical Music and am currently learning to play the sitar. I also enjoy badminton and chess.
 
-Beyond academics, I have a passion for music and photography. I've achieved "Praveshika Purn" in Hindustani Classical Music and am currently learning to play the Veena. I also enjoy badminton and chess.
-
-Feel free to reach out if you'd like to discuss robots, aerospace, or any other shared interests.
+Feel free to reach out if you'd like to discuss robots, aerospace, or potential collaborations!
