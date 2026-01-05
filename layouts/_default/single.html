@@ -1,10 +1,10 @@
 {{ define "main" }}
-<article class="single">
+<article class="single single-article">
   <header>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="description">{{ . }}</p>{{ end }}
     {{ if .Date }}
-    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    <time datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
     {{ end }}
     {{ with .Params.tags }}
     <div class="tags">
@@ -13,7 +13,7 @@
     {{ end }}
   </header>
 
-  <div class="content">
+  <div class="content single-content">
     {{ .Content }}
   </div>
 </article>

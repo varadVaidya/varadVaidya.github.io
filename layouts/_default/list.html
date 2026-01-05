@@ -6,22 +6,28 @@
   {{ .Content }}
 
   {{ if .Pages }}
-  <ul class="post-list">
+  <div class="post-grid">
     {{ range .Pages.ByDate.Reverse }}
-    <li class="post-item">
+    {{ $p := . }}
+    <article class="post-card {{ if eq .Section " projects" }}project-card{{ end }}">
       <a href="{{ .Permalink }}">
-        {{ with .Params.image }}
-        <img src="{{ . }}" alt="{{ $.Title }}" class="post-thumbnail">
+        {{ with $p.Params.image }}
+        <div class="post-thumb"><img src="{{ . }}" alt="{{ $p.Title }}"></div>
         {{ end }}
-        <div class="post-info">
-          <h2>{{ .Title }}</h2>
-          {{ with .Description }}<p>{{ . }}</p>{{ end }}
-          {{ if .Date }}<time>{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}
+        <div class="post-card-body">
+          <h3 class="post-card-title">{{ $p.Title }}</h3>
+          {{ with $p.Description }}<p class="post-card-excerpt">{{ . }}</p>{{ end }}
+          <div class="post-meta">
+            {{ if $p.Date }}<time>{{ $p.Date.Format "Jan 2, 2006" }}</time>{{ end }}
+            {{ with $p.Params.tags }}
+            {{ range $i, $tag := . }}{{ if lt $i 3 }}<span class="tag">{{ $tag }}</span>{{ end }}{{ end }}
+            {{ end }}
+          </div>
         </div>
       </a>
-    </li>
+    </article>
     {{ end }}
-  </ul>
+  </div>
   {{ end }}
 </section>
 {{ end }}

@@ -29,7 +29,33 @@ Open http://localhost:1313 in your browser. Changes auto-reload!
 
 The `-D` flag shows draft content (posts with `draft: true`).
 
+
+### Card-based lists (Blog & Projects)
+
+The blog and projects pages use a responsive card/grid layout. To control how an item appears on the listing page, set the following front-matter fields in the content file:
+
+- `image`: path to thumbnail (example: `/img/project.png`) — optional
+- `description`: a short excerpt shown on the list page
+- `tags`: a list of tags that appear as chips
+
+Example front matter:
+
+```yaml
+---
+title: "My Project"
+date: 2024-01-01
+description: "One-line summary"
+image: "/img/project.png"
 ### Build for Production
+---
+```
+
+To tweak the card appearance, edit `assets/css/main.css` (see `.post-grid`, `.post-card`, `.project-card`). You can change the grid columns, gaps, and card padding there.
+
+### CV page
+
+The CV page (`content/cv.md`) uses a styled download card. To change the PDF link or highlights, edit `content/cv.md` and update the link or the descriptive text inside the card.
+
 ```bash
 hugo
 ```
