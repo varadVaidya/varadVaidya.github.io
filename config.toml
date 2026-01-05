@@ -1,0 +1,58 @@
+baseURL = "https://varadVaidya.github.io/"
+languageCode = "en-us"
+title = "Varad Vaidya"
+
+# Disable unused features for simplicity
+disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
+
+[params]
+  author = "Varad Vaidya"
+  description = "MTech Research student at IISc Bangalore"
+
+  # Analytics
+  googleAnalytics = "G-MZC7H112MS"
+  googleSiteVerification = "MUdzdfr2bo2D96amIdG6goC8pSA0rY1U69VhNpb68vQ"
+
+  # Social links
+  email = "varadmandar@iisc.ac.in"
+  github = "varadVaidya"
+  linkedin = "varad-vaidya-a86696176"
+  scholar = "qc6CJjYAAAAJ"
+  twitter = "AegislashV"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 4
+  [[menu.main]]
+    name = "CV"
+    url = "/cv/"
+    weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\[', '\]']]
+          inline = [['$', '$'], ['\(', '\)']]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+    lineNos = false

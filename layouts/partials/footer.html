@@ -1,0 +1,10 @@
+<footer>
+  <div class="social-links">
+    {{ with .Site.Params.email }}<a href="mailto:{{ . }}" title="Email">Email</a>{{ end }}
+    {{ with .Site.Params.github }}<a href="https://github.com/{{ . }}" target="_blank" title="GitHub">GitHub</a>{{ end }}
+    {{ with .Site.Params.linkedin }}<a href="https://linkedin.com/in/{{ . }}" target="_blank" title="LinkedIn">LinkedIn</a>{{ end }}
+    {{ with .Site.Params.scholar }}<a href="https://scholar.google.com/citations?user={{ . }}" target="_blank" title="Google Scholar">Scholar</a>{{ end }}
+    {{ with .Site.Params.twitter }}<a href="https://twitter.com/{{ . }}" target="_blank" title="Twitter">Twitter</a>{{ end }}
+  </div>
+  <p>&copy; {{ now.Year }} {{ .Site.Params.author }}. Built with <a href="https://gohugo.io" target="_blank">Hugo</a>.</p>
+</footer>
