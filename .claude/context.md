@@ -26,8 +26,12 @@ varadVaidya.github.io/
 │   │   ├── drone-balance.md
 │   │   ├── kuka-youbot.md
 │   │   └── math-demo.md     # Draft - math rendering demo
-│   ├── publications.md
+│   ├── publications.md      # Auto-generated from BibTeX
 │   └── cv.md
+├── data/
+│   └── papers.bib           # BibTeX source for publications
+├── scripts/
+│   └── generate_publications.py  # BibTeX → Markdown generator
 ├── layouts/
 │   ├── _default/
 │   │   ├── baseof.html
@@ -51,6 +55,7 @@ varadVaidya.github.io/
 - **Images**: Just drop in `static/img/`, reference as `/img/filename.png`
 - **Analytics**: Google Analytics `G-MZC7H112MS`
 - **Deployment**: GitHub Actions on push to master
+- **Publications**: Auto-generated from `data/papers.bib`
 
 ## Commands
 
@@ -59,67 +64,45 @@ hugo server -D    # Local preview (with drafts)
 hugo              # Build
 hugo new blog/my-post.md      # New blog post
 hugo new projects/my-proj.md  # New project
+python3 scripts/generate_publications.py  # Regenerate publications from BibTeX
 ```
 
 ---
 
-# PENDING TASK: BibTeX Integration
+# BibTeX Publications System
 
-## Goal
+## How It Works
 
-Add automatic publication list generation from BibTeX file.
+1. Add publications to `data/papers.bib`
+2. Run `python3 scripts/generate_publications.py`
+3. Script generates `content/publications.md` automatically
 
-## Current State
-
-Publications are manually listed in `content/publications.md`:
-
-```markdown
-## 2025
-**"Dynamics-Invariant Quadrotor Control"**
-**Varad Vaidya**, et al. (Accepted to *IROS 2025*)...
-
-## 2021
-**Sahayak-An Autonomous COVID Aid Bot**
-Karthik Raman, ... **Varad Vaidya**, ...
-```
-
-## Old BibTeX Location
-
-The old site had BibTeX at `_bibliography/papers.bib` (now deleted). Sample entry:
+## BibTeX Format
 
 ```bibtex
-@article{raman2021sahayak,
-  abbr    = {ISMR},
-  title   = {Sahayak-An Autonomous COVID Aid Bot},
-  author  = {Raman, Karthik and Ringe, Prathamesh and Subhedar, Sania and Shah, Sushlok and Vaidya, Varad and Devada, Yagnesh and Fadia, Aayush and Srivastava, Kushagra and  Zade, Harshad and Kamat, Ajinkya and others},
-  journal = {International Symposium of Medical Robotics},
-  year    = {2021}
+@inproceedings{key2025,
+  title     = {Paper Title},
+  author    = {Last, First and Vaidya, Varad and others},
+  booktitle = {Conference Name},
+  year      = {2025},
+  note      = {Optional note about acceptance, presentation, etc.},
+  url       = {https://paper-link.com},
+  doi       = {10.1234/doi},
+  arxiv     = {2401.12345},
+  code      = {https://github.com/...},
+  video     = {https://youtube.com/...}
 }
 ```
 
-## Suggested Approach
+## Features
 
-### Option A: Hugo Module (Recommended if Hugo version supports)
-Use a Hugo module like `hugo-cite` for BibTeX parsing.
+- Groups publications by year (newest first)
+- Auto-bolds your name ("Varad Vaidya")
+- Generates links for: url, doi, arxiv, code, video
+- Supports both `@article` and `@inproceedings` types
 
-### Option B: Simple Python Script
-Create a script that:
-1. Reads `data/papers.bib`
-2. Generates `content/publications.md` from it
-3. Run manually when bibliography updates
+## To Customize
 
-### Option C: Data Files + Template
-1. Convert BibTeX to YAML/JSON in `data/publications.yaml`
-2. Create a template that reads from data file
-
-## Requirements
-
-- User wants BibTeX support but not critical priority
-- Keep it simple - user doesn't want to learn web dev
-- Should work with Hugo v0.92.2 (apt version on Ubuntu)
-
-## Notes
-
-- Hugo v0.92.2 is older, some newer features may not work
-- User prefers simple solutions over complex ones
-- The `passthrough` config for math delimiters may not work in v0.92 (it's a newer feature), but KaTeX client-side rendering works fine
+Edit `scripts/generate_publications.py`:
+- `YOUR_NAME`: How your name appears in BibTeX (e.g., "Vaidya, Varad")
+- `YOUR_NAME_DISPLAY`: How to display your name (e.g., "Varad Vaidya")

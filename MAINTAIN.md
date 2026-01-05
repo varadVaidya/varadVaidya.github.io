@@ -185,13 +185,51 @@ news:
 ```
 
 ### Add a Publication
-Edit `content/publications.md` and add:
-```markdown
-**Paper Title**
-Author1, Author2, **Your Name**, et al.
-*Journal/Conference Name*, Year
-[PDF](link) | [Code](link)
-```
+1. Edit `data/papers.bib` and add your BibTeX entry:
+   ```bibtex
+   @inproceedings{yourkey2025,
+     title     = {Your Paper Title},
+     author    = {Last, First and Vaidya, Varad and others},
+     booktitle = {Conference Name},
+     year      = {2025},
+     doi       = {10.1109/xxxxx},
+     arxiv     = {2401.12345},
+     code      = {https://github.com/...},
+     video     = {https://youtube.com/...},
+     url       = {https://paper-link.com},
+     pdf       = {https://link-to-pdf.pdf},
+     note      = {Best Paper Award}
+   }
+   ```
+
+2. Regenerate the publications page:
+   ```bash
+   python3 scripts/generate_publications.py
+   ```
+
+3. Preview and commit:
+   ```bash
+   hugo server -D
+   git add . && git commit -m "Add new publication" && git push
+   ```
+
+**Required BibTeX fields:**
+- `title` - Paper title
+- `author` - Authors (format: `Last, First and Last, First and others`)
+- `year` - Publication year
+- `booktitle` or `journal` - Venue name
+
+**Optional fields (auto-generate link buttons):**
+
+| Field   | Button     | Value format                          |
+|---------|------------|---------------------------------------|
+| `doi`   | 🔗 DOI     | Just the ID: `10.1109/IROS60139...`   |
+| `arxiv` | 📚 arXiv   | Just the ID: `2401.12345`             |
+| `code`  | 💻 Code    | Full URL: `https://github.com/...`    |
+| `video` | 🎬 Video   | Full URL: `https://youtube.com/...`   |
+| `url`   | 📄 Paper   | Full URL to paper page                |
+| `pdf`   | 📄 PDF     | Full URL to PDF file                  |
+| `note`  | *(text)*   | Displays below venue (e.g., "Best Paper Award") |
 
 ### Update CV Link
 Edit `content/cv.md` and change the Google Drive link.
