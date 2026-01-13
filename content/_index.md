@@ -26,3 +26,5 @@ My research focuses on dynamics-invariant control for quadrotors and agile aeria
 Previously, I worked at Thermax Limited (Pune) on biomass-based and renewable energy solutions for industrial processes. During my undergraduate studies, I contributed to IvLabs on quadrotor modeling and control, robotic manipulators, and deep reinforcement learning for robot control.
 
 Outside research, I enjoy Hindustani classical music (Praveshika Purn), photography, badminton, and chess. Feel free to reach out if you’d like to discuss robotics, aerospace, or potential collaborations.
+
+The website is currently under construction. Please pardon the mess, and incomplete content. Thank you for visiting!
